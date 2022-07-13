@@ -47,13 +47,3 @@ for(let i=1; i<=distanciaKm; i ++){
 document.write("<p>Considerando que la distancia que vas a recorrer es de " +distanciaKm+"\n y que tu vehiculo rinde "+rendimientoPorLitro+" Kms/Lts:</p>")
 document.write("<p>El consumo esperado para "+distanciaKm+"km es de: " +consumo+" lts</p>")
 document.write("<p>El gasto esperado es de: " +gasto+" "+moneda+".</p>")
-
-/*
-let entrada = prompt("Ingresar un dato");
-//Repetimos con While hasta que el usuario ingresa "ESC"
-while(entrada != "ESC" ){
-    alert("El usuario ingresó "+ entrada);
-    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
-    entrada = prompt("Ingresar otro dato");
-}
-*/
