@@ -1,5 +1,4 @@
 
-
 let distanciaKm= parseInt(prompt("Ingresa la distancia que andarás (en Kilometros*)"))
 let valorGas= parseFloat(prompt("Ingresa el valor de la nafta"))
 let rendimientoPorLitro= parseInt(prompt("Ingresa el rendimiento de Kilometros/ Litro de tu vehiculo"))
