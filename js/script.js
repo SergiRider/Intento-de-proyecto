@@ -64,6 +64,10 @@ function myFunction2(){
             valorDeNumero = num.valueOf();
             extraccionNumero = valorDeNumero.slice(0, 2);
             distanciaFrenadoSobre100 = extraccionNumero * 3
+            document.getElementById("frenado0").innerHTML = "Considerando que frenarás a la velocidad de "+num+" kms/hr:";
+        document.getElementById("frenado1").innerHTML = "La distancia de frenado en condiciones normales es de: " + distanciaFrenadoSobre100 + " mts";
+        document.getElementById("frenado2").innerHTML ="Si el piso está mojado, la distancia sería: " + distanciaFrenadoSobre100 * pisoMojado + " mts"
+        document.getElementById("frenado3").innerHTML ="Si el piso tiene hielo, la distancia sería: " + distanciaFrenadoSobre100 * pisoConHielo + " mts"
             
         } else if (num < 100 && num > 0) {
             alert("Ingresado OK")
@@ -71,10 +75,11 @@ function myFunction2(){
             valorDeNumero = num.valueOf();
             extraccionNumero = valorDeNumero.slice(0, 1);
             distanciaFrenadoBajo100 = extraccionNumero * 3
- 
+            document.getElementById("frenado0").innerHTML = "Considerando que frenarás a la velocidad de "+num+" kms/hr:";
+        document.getElementById("frenado1").innerHTML = "La distancia de frenado en condiciones normales es de: " + distanciaFrenadoBajo100 + " mts";
+        document.getElementById("frenado2").innerHTML ="Si el piso está mojado, la distancia sería: " + distanciaFrenadoBajo100 * pisoMojado + " mts"
+        document.getElementById("frenado3").innerHTML ="Si el piso tiene hielo, la distancia sería: " + distanciaFrenadoBajo100 * pisoConHielo + " mts"
         }
-        document.getElementById("frenado0").innerHTML = "Considerando que frenarás a la velocidad de "+num+" kms/hr:";
-        document.getElementById("frenado1").innerHTML = "La distancia de frenado en condiciones normales es de: " + distanciaFrenadoSobre100 + " mts\nSi el piso está mojado, la distancia sería: " + distanciaFrenadoSobre100 * pisoMojado + " mts\nSi el piso tiene hielo, la distancia sería: " + distanciaFrenadoSobre100 * pisoConHielo + " mts";
-    
+        
     }
 
