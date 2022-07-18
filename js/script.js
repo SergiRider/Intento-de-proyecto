@@ -39,15 +39,17 @@ function myFunction(){
     document.getElementById("demo0").innerHTML = "Considerando que la distancia que vas a recorrer es de " + distanciaKm + "\n y que tu vehiculo rinde " + rendimientoPorLitro + " Kms/Lts:";
     document.getElementById("demo1").innerHTML = "El consumo esperado para " + distanciaKm + "km es de: " + consumo + " lts";
     document.getElementById("demo2").innerHTML = "El gasto esperado es de: " + gasto + " " + moneda + ".";
+    
+    let i = 1
+    for (let i = 1; i <= distanciaKm; i++) {
+        let resultado = (consumo * i) / distanciaKm;
+        console.log("El gasto a los " + i + " km es " + resultado)
 }
 
-/*
-let i = 1
-for (let i = 1; i <= distanciaKm; i++) {
-    let resultado = (consumo * i) / distanciaKm;
-    console.log("El gasto a los " + i + " km es " + resultado)
+
+
 }
-*/
+
 
 
 function myFunction2(){
