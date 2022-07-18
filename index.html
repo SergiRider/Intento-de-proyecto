@@ -1,17 +1,91 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complementario 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <H1>Desafio complementario 1</H1>
-    <h5>Expira el 14 de julio</h5>
 
-    <h3>Resultados:</h3>
-    <p></p>
-    <script type="text/javascript" script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <H1>Desafio entregable 1</H1>
+    <h2>| Expira el 14 de julio | </h2>
+
+    <section class="consumo">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Consumo de combustible por tramos</h3>
+                    <p>El consumo de combustible actualmente es una gran preocupación a causa de la inflación. A
+                        continuación se entrega una pequeña herramienta que permite planificar los costos de consumo del
+                        combustible.</p>
+                </div>
+                    <div class="col-6">
+                        <h3>Resultados:</h3>
+                        <div class="resultadoConsumo">
+                            <p id="demo0"></p>
+                            <p id="demo1"></p>
+                            <p id="demo2"></p>
+                        </div>
+                    </div>
+                
+            </div>
+            <button type="button" id="myBtn" onclick="myFunction()" class="cssbuttons-io-button"> Planifica tu viaje!
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+    </section>
+
+    <section class="frenado">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Distancia de frenado</h2>
+                    <p>Estadisticamente las colisiones por alcance son el principal accidente vehicular, lo cual nos
+                        permite deducir que no identificar las distancias de frenado son un gran problema en los
+                        conductores. Con esta simple herramienta se mostrarán resultados aproximados según un tiempo de
+                        reacción promedio de uno a dos segundos para el conductor promedio.
+
+                    </p>
+                </div>
+
+                <div class="col-6">
+                    <h3>Resultados:</h3>
+                    <div class="resultadoFrenado">
+                    <p id="frenado0"></p>
+                    <p id="frenado1"></p>
+                </div>
+                </div>
+            </div>
+            <button type="button" id="myBtn2" onclick="myFunction2()" class="cssbuttons-io-button2"> Calcula distancia de frenado!
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+     
+    </section>
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
