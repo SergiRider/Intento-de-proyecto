@@ -80,7 +80,7 @@ function myFunction2(){
             document.getElementById("frenado0").innerHTML = "Considerando que frenarás a la velocidad de "+num+" kms/hr:";
         document.getElementById("frenado1").innerHTML = "La distancia de frenado en condiciones normales es de: " + distanciaFrenadoBajo100 + " mts";
         document.getElementById("frenado2").innerHTML ="Si el piso está mojado, la distancia sería: " + distanciaFrenadoBajo100 * pisoMojado + " mts"
-        document.getElementById("frenado3").innerHTML ="Si el piso tiene hielo, la distancia sería: " + distanciaFrenadoBajo100 * pisoConHielo + " mts"
+        document.getElementById("frenado3").innerHTML ="Si el piso tiene hielo, la distancia sería: " + distanciaFrenadoBajo100 * pisoConHielo + " mts \n(no se consideró los segundos de reacción antes de frenar)"
         }
         
     }
